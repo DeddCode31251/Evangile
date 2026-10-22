@@ -9,6 +9,7 @@ Hello!,
 -- wasted_hours = 2h
 --
 -- Please update that counter 'wasted_hours' when you think you're a genius and try to do smth new.
+--
 -- Thanks!
 */
 
