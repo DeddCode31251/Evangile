@@ -1,3 +1,4 @@
+
 :root {
     --bg: #fbf4e6;
     --bg2: #f3e2c0;
@@ -77,6 +78,7 @@ header {
     gap: 8px;
     direction: ltr
 }
+/* My designs are actually that bad, so most of them are inspired by AI or directly copied from it. Keep it a secret 🤫, dw that emoji aint AI*/
 
 .logo small {
     font: 400 .75rem 'Noto Sans Coptic', serif;
@@ -187,7 +189,7 @@ h2 {
     font-weight: 700
 }
 
-.chips {
+.chips { /*Deliciious*/
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -212,7 +214,7 @@ h2 {
     border-color: var(--acc)
 }
 
-.verse {
+.verse { /* New Vocab !!*/
     position: relative;
     background: var(--card);
     border: 1px solid var(--line);
@@ -225,18 +227,18 @@ h2 {
 }
 
 .verse::before {
-    content: "“";
+    content: "“"; /* Eye pain in the code but it looks good in the actual web!!*/
     position: absolute;
     top: -14px;
     inset-inline-start: 14px;
     font: 700 7rem Amiri, serif;
-    color: var(--acc2);
+    color: var(--acc2); /* other random name 'acc2'*/
     opacity: .25;
     line-height: 1
 }
 
 .verse.pop {
-    animation: pop .4s ease-out
+    animation: pop .4s ease-out /*using .Xs instead of 0.Xs because i used to use .Xs in kivy python library.*/
 }
 
 @keyframes pop {
@@ -248,15 +250,15 @@ h2 {
 
 .tag {
     display: inline-block;
-    font-size: .75rem;
+    font-size: .75rem; /* keeps miswriting the comments using '//' */
     font-weight: 700;
     color: var(--acc);
     background: color-mix(in srgb, var(--acc) 12%, transparent);
     padding: 4px 12px;
-    border-radius: 999px;
+    border-radius: 999px; /* don't ask why i used this random num.*/
     margin-bottom: 14px
 }
-
+/*From now on don't search for hints or comments*/
 .txt {
     font-family: Amiri, Georgia, serif;
     font-size: clamp(1.5rem, 5.4vw, 2.1rem);
@@ -272,7 +274,7 @@ h2 {
 }
 
 .ref {
-    font: 700 1.2rem 'Aref Ruqaa', Lora, serif;
+    font: 700 1.2rem 'Aref Ruqaa', Lora, serif; 
     color: var(--acc);
     margin-bottom: 6px;
     border-bottom: 2px dashed var(--acc2);
@@ -528,5 +530,207 @@ footer {
     * {
         animation: none !important;
         transition: none !important
+    }
+}
+
+/* ---------- workspace: book + notebook ---------- */
+.wsc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+    margin: 12px 0
+}
+
+.wsc select {
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--ink);
+    border-radius: 12px;
+    padding: 9px 10px;
+    font: 600 .9rem Cairo, sans-serif;
+    min-width: 0
+}
+
+.bookwrap {
+    perspective: 1400px;
+    margin: 10px 0 14px
+}
+
+.book {
+    position: relative;
+    border-radius: 8px 22px 22px 8px;
+    background: var(--card);
+    border: 7px solid color-mix(in srgb, var(--acc) 65%, #2b1a0c);
+    box-shadow: 1px 1px 0 var(--line), 2px 2px 0 var(--bg2), 3px 3px 0 var(--line), 4px 4px 0 var(--bg2), 5px 5px 0 var(--line), 0 24px 40px -22px #000a
+}
+
+.pgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    border-radius: 2px 14px 14px 2px;
+    overflow: hidden
+}
+
+.pgs::after {
+    content: "";
+    position: absolute;
+    inset: 0 calc(50% - 14px);
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, .2), transparent);
+    pointer-events: none
+}
+
+.pg {
+    padding: 14px 16px 20px;
+    height: min(68vh, 560px);
+    overflow: auto;
+    line-height: 1.9
+}
+
+.pgh {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font: 700 .8rem Cairo, sans-serif;
+    color: var(--acc);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 10px;
+    padding-bottom: 6px
+}
+
+.vs {
+    margin: 0 0 6px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s
+}
+
+.vs sup {
+    color: var(--acc);
+    font-weight: 700;
+    margin-inline-end: 4px;
+    font-size: .65em
+}
+
+.vs.sel {
+    outline: 2px solid var(--acc)
+}
+
+.h1 {
+    background: rgba(255, 213, 79, .45)
+}
+
+.h2 {
+    background: rgba(129, 199, 132, .4)
+}
+
+.h3 {
+    background: rgba(100, 181, 246, .4)
+}
+
+.h4 {
+    background: rgba(244, 143, 177, .4)
+}
+
+.turn .pgs {
+    animation: turn .6s ease;
+    transform-origin: center
+}
+
+@keyframes turn {
+    from {
+        transform: rotateY(-18deg);
+        opacity: .3
+    }
+}
+
+.rib {
+    position: absolute;
+    top: -8px;
+    inset-inline-end: 26px;
+    width: 16px;
+    height: 46px;
+    background: #c0392b;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+    z-index: 2
+}
+
+.vbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 46px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border: 1px dashed var(--line);
+    border-radius: 16px;
+    color: var(--mut);
+    font-size: .85rem
+}
+
+.sw {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid var(--line);
+    cursor: pointer
+}
+
+.wsb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+.nt {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px 18px 18px 8px;
+    border-inline-start: 6px solid var(--acc);
+    padding: 8px 14px 12px;
+    margin-bottom: 12px
+}
+
+.ntd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--mut);
+    font-size: .78rem
+}
+
+.nt textarea {
+    width: 100%;
+    border: 0;
+    resize: vertical;
+    background: repeating-linear-gradient(transparent 0 27px, var(--line) 27px 28px);
+    color: var(--ink);
+    font: 1.15rem/28px 'Aref Ruqaa', Lora, serif;
+    padding: 0 2px
+}
+
+.nt textarea:focus {
+    outline: 0
+}
+
+@media (max-width:700px) {
+    .pgs {
+        grid-template-columns: 1fr
+    }
+
+    .pgs::after {
+        display: none
+    }
+
+    .pg {
+        height: 44vh
+    }
+
+    .pg+.pg {
+        border-top: 2px dashed var(--line)
     }
 }
