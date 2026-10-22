@@ -34,6 +34,8 @@ JavaScript
 - Sermons (Tab)
 - Updates (Tab)
 - About (Tab)
+- Book (Bible (Tab))
+- Note-Book (Tab)
 
 # Screenshots!
 
