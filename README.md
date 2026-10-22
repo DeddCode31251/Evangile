@@ -12,7 +12,9 @@ CSS
 ```  bash
 JavaScript
 ```
-
+# Notes
+- Not all the bible in it yet!
+  
 # Features
 - ## Languages
 - Arabic
