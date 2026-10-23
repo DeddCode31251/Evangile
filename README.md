@@ -39,6 +39,11 @@ JavaScript
 
 # Screenshots!
 
+<img width="1077" height="966" alt="Screenshot From 2026-10-23 16-16-48" src="https://github.com/user-attachments/assets/a86f39ea-5e2d-44a9-95e0-bfad3b024327" />
+<img width="1077" height="966" alt="Screenshot From 2026-10-23 16-16-53" src="https://github.com/user-attachments/assets/485efb60-21d2-4796-8044-604f311799c4" />
+<img width="1077" height="966" alt="Screenshot From 2026-10-23 16-16-41" src="https://github.com/user-attachments/assets/07463316-4ab1-4800-8b47-1e75625083fc" />
+<img width="1077" height="966" alt="Screenshot From 2026-10-23 16-15-36" src="https://github.com/user-attachments/assets/ea4e9049-37d7-44da-84f9-ee21012ca302" />
+<img width="1077" height="966" alt="Screenshot From 2026-10-23 16-15-44" src="https://github.com/user-attachments/assets/f6f1b849-651c-45a4-8b17-5401c15c11df" />
 <img width="1880" height="1007" alt="Screenshot From 2026-10-18 13-01-45" src="https://github.com/user-attachments/assets/04504b64-b6ea-4543-b496-c32c86fe4f0b" />
 <img width="1880" height="1007" alt="Screenshot From 2026-10-18 13-01-42" src="https://github.com/user-attachments/assets/2fca13db-6d0a-461e-8a50-9e0f03ef4efe" />
 <img width="1880" height="1007" alt="Screenshot From 2026-10-18 13-01-49" src="https://github.com/user-attachments/assets/1a4c7b8b-ca27-4841-b615-3aa391fcd3e9" />
