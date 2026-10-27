@@ -588,7 +588,7 @@ const logs = [
     d: "2026-10-26",
     t: ["تصميم أهدى ونصوص جديدة", "A quieter design and new passages", "Un design plus sobre et de nouveaux passages"],
     x: [
-      "تعديل الديساين و اضافه مزمور 1 و متى 5 و 12-1 و يوحنا 1:1-14 و كورنثوس 13"
+      "تعديل الديساين و اضافه مزمور 1 و متى 5 و 12-1 و يوحنا 1:1-14 و كورنثوس 13",
       "Adjust the design and add Psalm 1, Matthew 5:1–12, John 1:1–14, and 1 Corinthians 13.",
       "Modification du design et ajout du Psaume 1, de Matthieu 5:1-12, de Jean 1:1-14 et de 1 Corinthiens 13.",
     ],
