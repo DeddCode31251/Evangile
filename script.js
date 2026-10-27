@@ -512,8 +512,8 @@ const X = {
   updT: ["إيه الجديد", "What’s new", "Nouveautés"],
   aboutT: ["عن المطوّر", "About the developer", "À propos du développeur"],
   about: [
-    "أنا مطوّر ويب Full-stack (HTML وCSS وJS وNode.js وExpress وMySQL) بعمل مواقع آمنة وتشتغل على كل الأجهزة. عملت Evangil عشان قراءة الكلمة تبقى عادة يومية، ببلاش ومن غير تسجيل.",
-    "I’m a full-stack web developer (HTML, CSS, JS, Node.js, Express, MySQL) building secure websites that work on every device. I made Evangil to make reading the Word a daily habit: free, with no sign-up.",
+    "أنا مطوّر ويب Full-stack (HTML وCSS وJS وNode.js وExpress وMySQL) بعمل مواقع آمنة وتشتغل على كل الأجهزة. عملت Evangile عشان قراءة الكلمة تبقى عادة يومية، ببلاش ومن غير تسجيل.",
+    "I’m a full-stack web developer (HTML, CSS, JS, Node.js, Express, MySQL) building secure websites that work on every device. I made Evangile to make reading the Word a daily habit: free, with no sign-up.",
     "Je suis développeur web full-stack (HTML, CSS, JS, Node.js, Express, MySQL) et je crée des sites sécurisés qui fonctionnent sur tous les appareils. J’ai créé Evangil pour faire de la lecture de la Parole une habitude quotidienne : gratuit et sans inscription.",
   ],
   cont: ["للتواصل", "Get in touch", "Me contacter"],
@@ -588,9 +588,9 @@ const logs = [
     d: "2026-10-26",
     t: ["تصميم أهدى ونصوص جديدة", "A quieter design and new passages", "Un design plus sobre et de nouveaux passages"],
     x: [
-      "مظهر ورقي هادي من غير ألوان لامعة، ووضع ليلي دافي بدل الأسود الفاقع. وأضفنا مزمور ١ ومتى ٥: ١–١٢ ويوحنا ١: ١–١٤ و١ كورنثوس ١٣.",
-      "A calm printed-paper look with no glow, and a warm night mode instead of harsh black. Added Psalm 1, Matthew 5:1–12, John 1:1–14 and 1 Corinthians 13.",
-      "Un aspect papier imprimé sans effets lumineux, et un mode nuit chaleureux. Ajout du Psaume 1, de Matthieu 5:1–12, de Jean 1:1–14 et de 1 Corinthiens 13.",
+      "تعديل الديساين و اضافه مزمور 1 و متى 5 و 12-1 و يوحنا 1:1-14 و كورنثوس 13"
+      "Adjust the design and add Psalm 1, Matthew 5:1–12, John 1:1–14, and 1 Corinthians 13.",
+      "Modification du design et ajout du Psaume 1, de Matthieu 5:1-12, de Jean 1:1-14 et de 1 Corinthiens 13.",
     ],
   },
   {
