@@ -668,9 +668,16 @@ function card(f, i) {
 }
 
 function panel(i) {
-  if (tab === "book") return WS.book(i);
-  if (tab === "note") return WS.note(i);
-  const hd = (t, s) => `<div class="hi"><div><h1>${t}</h1>${s ? `<p>${s}</p>` : ""}</div></div>`;
+   if (tab === "book") {
+    return typeof WS !== "undefined" && WS ? WS.book(i) : "<p>Book unavailable</p>";
+  }
+  
+  if (tab === "note") {
+    return typeof WS !== "undefined" && WS ? WS.note(i) : "<p>Notebook unavailable</p>";
+  }
+  
+  if (typeof WS !== "undefined" && WS) WS.after();
+    const hd = (t, s) => `<div class="hi"><div><h1>${t}</h1>${s ? `<p>${s}</p>` : ""}</div></div>`;
 
   if (tab === "ser") {
     // Brain rot function, i don't remember how it works.
