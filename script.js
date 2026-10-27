@@ -6,10 +6,9 @@ Hello!,
 -- For now it's only God!
 -- If it works dont dare to touch it please,
 -- 
--- wasted_hours = 2h
+-- wasted_hours = 3h
 --
 -- Please update that counter 'wasted_hours' when you think you're a genius and try to do smth new.
---
 -- Thanks!
 */
 
@@ -132,7 +131,7 @@ const V = [
       "Notre Père qui es aux cieux! Que ton nom soit sanctifié!",
     ],
   },
-  {
+    {
     r: ["رومية ٨: ٢٨", "Romans 8:28", "Romains 8:28"],
     m: "hs",
     t: [
@@ -452,12 +451,10 @@ const save = () => {
   } catch (e) {}
 };
 
-const key = (d) =>
-  d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+const key = (d) => d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
 
 const daily = () =>
-  Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5) %
-  V.length;
+  Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5) % V.length;
 
 const $ = (s) => document.querySelector(s);
 
@@ -554,11 +551,7 @@ const F = [
     k: "m",
     y: "~68",
     q: "سيرة القديس مرقس الرسول",
-    n: [
-      "القديس مرقس الرسول",
-      "St. Mark the Evangelist",
-      "Saint Marc l’évangéliste",
-    ],
+    n: ["القديس مرقس الرسول", "St. Mark the Evangelist", "Saint Marc l’évangéliste"],
     b: [
       "كاتب الإنجيل ومؤسس كنيسة الإسكندرية، وتقول التقاليد إنه استشهد فيها نحو سنة ٦٨م.",
       "Writer of the Gospel and founder of the Church of Alexandria; tradition says he was martyred there around AD 68.",
@@ -569,11 +562,7 @@ const F = [
     k: "m",
     y: "~296",
     q: "سيرة مارمينا العجايبي",
-    n: [
-      "مارمينا العجايبي",
-      "St. Mina the Miracle-Worker",
-      "Saint Mina le thaumaturge",
-    ],
+    n: ["مارمينا العجايبي", "St. Mina the Miracle-Worker", "Saint Mina le thaumaturge"],
     b: [
       "جندي استشهد نحو سنة ٢٩٦م، ومنطقة أبو مينا قرب الإسكندرية من مواقع التراث العالمي لليونسكو.",
       "A soldier martyred around AD 296; the Abu Mena site near Alexandria is a UNESCO World Heritage Site.",
@@ -584,11 +573,7 @@ const F = [
     k: "m",
     y: "2015",
     q: "شهداء ليبيا الـ٢١ قصة",
-    n: [
-      "شهداء ليبيا الـ٢١",
-      "The 21 Martyrs of Libya",
-      "Les 21 martyrs de Libye",
-    ],
+    n: ["شهداء ليبيا الـ٢١", "The 21 Martyrs of Libya", "Les 21 martyrs de Libye"],
     b: [
       "في ١٥ فبراير ٢٠١٥ قُتل ٢١ رجلًا في ليبيا (٢٠ مصريًا قبطيًا ومعهم رجل من غانا)، وتحتفل بهم الكنيسة القبطية كشهداء.",
       "On 15 February 2015, 21 men (20 Egyptian Copts and one Ghanaian) were killed in Libya; the Coptic Church commemorates them as martyrs.",
@@ -599,6 +584,16 @@ const F = [
 
 const logs = [
   {
+    v: "v1.4",
+    d: "2026-10-26",
+    t: ["تصميم أهدى ونصوص جديدة", "A quieter design and new passages", "Un design plus sobre et de nouveaux passages"],
+    x: [
+      "مظهر ورقي هادي من غير ألوان لامعة، ووضع ليلي دافي بدل الأسود الفاقع. وأضفنا مزمور ١ ومتى ٥: ١–١٢ ويوحنا ١: ١–١٤ و١ كورنثوس ١٣.",
+      "A calm printed-paper look with no glow, and a warm night mode instead of harsh black. Added Psalm 1, Matthew 5:1–12, John 1:1–14 and 1 Corinthians 13.",
+      "Un aspect papier imprimé sans effets lumineux, et un mode nuit chaleureux. Ajout du Psaume 1, de Matthieu 5:1–12, de Jean 1:1–14 et de 1 Corinthiens 13.",
+    ],
+  },
+  {
     v: "v1.3",
     d: "2026-10-22",
     t: ["الكتاب والدفتر", "The Book and the Notebook", "Le Livre et le Carnet"],
@@ -608,7 +603,7 @@ const logs = [
       "Un livre à deux pages (arabe · anglais · français · copte), versets surlignés, chapitres lus, signet et carnet de notes.",
     ],
   },
-  {
+    {
     v: "v1.2.1",
     d: "2026-10-18",
     t: [
@@ -639,11 +634,7 @@ const logs = [
   {
     v: "v1.1",
     d: "2026-10-18",
-    t: [
-      "القبطي وتصميم أدفى",
-      "Coptic and a warmer design",
-      "Le copte et un design plus chaleureux",
-    ],
+    t: ["القبطي وتصميم أدفى", "Coptic and a warmer design", "Le copte et un design plus chaleureux"],
     x: [
       "زر Ⲙ للغة القبطية (الصلاة الربانية دلوقتي والباقي تحت المراجعة)، وتحية حسب الوقت وسطر تكتبه لنفسك.",
       "The Ⲙ button adds Coptic (the Lord’s Prayer for now, the rest under review), plus a time-of-day greeting and a note line for yourself.",
@@ -666,65 +657,47 @@ const TABS = ["home", "book", "note", "ser", "logs", "me"];
 
 function nav(u, i) {
   const btns = X.tabs
-    .map(
-      (t, n) =>
-        `<button class="chip ${tab === TABS[n] ? "on" : ""}" data-tab="${TABS[n]}">${t[i]}</button>`,
-    )
+    .map((t, n) => `<button class="chip ${tab === TABS[n] ? "on" : ""}" data-tab="${TABS[n]}">${t[i]}</button>`)
     .join("");
   return `<div class="tabs">${btns}</div>`;
 }
 
 function card(f, i) {
-  const href =
-    f.s ||
-    "https://www.youtube.com/results?search_query=" + encodeURIComponent(f.q);
+  const href = f.s || "https://www.youtube.com/results?search_query=" + encodeURIComponent(f.q);
   return `<div class="card2"><h3>${f.n[i]} <span class="y">${f.y}</span></h3><p>${f.b[i]}</p><a class="lk" href="${href}" target="_blank" rel="noopener noreferrer">${X.lis[i]}</a></div>`;
 }
 
 function panel(i) {
   if (tab === "book") return WS.book(i);
   if (tab === "note") return WS.note(i);
-  const hd = (t, s) =>
-    `<div class="hi"><div><h1>${t}</h1>${s ? `<p>${s}</p>` : ""}</div></div>`;
+  const hd = (t, s) => `<div class="hi"><div><h1>${t}</h1>${s ? `<p>${s}</p>` : ""}</div></div>`;
 
   if (tab === "ser") {
     // Brain rot function, i don't remember how it works.
     const sec = (title, k) =>
-      `<h2>${title}</h2>` +
-      F.filter((f) => f.k === k)
-        .map((f) => card(f, i))
-        .join("");
+      `<h2>${title}</h2>` + F.filter((f) => f.k === k).map((f) => card(f, i)).join("");
     return hd(X.sermT[i], X.sermI[i]) + sec(X.pr[i], "p") + sec(X.mr[i], "m");
   }
 
   if (tab === "logs") {
-    const items = logs
-      .map(
-        (e) =>
-          `<div class="card2"><span class="ver">${e.v}</span> <span class="y">${e.d}</span><h3>${e.t[i]}</h3><p>${e.x[i]}</p></div>`,
-      )
-      .join("");
+    const items = logs.map(
+      (e) =>
+        `<div class="card2"><span class="ver">${e.v}</span> <span class="y">${e.d}</span><h3>${e.t[i]}</h3><p>${e.x[i]}</p></div>`
+    ).join("");
     return hd(X.updT[i]) + items;
   }
 
   const links = [
     // The regex is just an random 'Medium' post i have seen that actually helped.
-    ["✉", ME.email && "mailto:" + ME.email, ME.email],
-    [
-      "WhatsApp",
-      ME.whatsapp && "https://wa.me/" + ME.whatsapp.replace(/[^0-9]/g, ""),
-      ME.whatsapp,
-    ],
-    ["☎", ME.phone && "tel:" + ME.phone, ME.phone],
+    ["Email", ME.email && "mailto:" + ME.email, ME.email],
+    ["WhatsApp", ME.whatsapp && "https://wa.me/" + ME.whatsapp.replace(/[^0-9]/g, ""), ME.whatsapp],
+    ["Phone", ME.phone && "tel:" + ME.phone, ME.phone],
     ["GitHub", ME.github, ME.github],
-    ["🌐", ME.site, ME.site],
+    ["Web", ME.site, ME.site],
   ].filter((x) => x[1]);
 
   const chips = links
-    .map(
-      (x) =>
-        `<a class="chip" href="${x[1]}" target="_blank" rel="noopener noreferrer">${x[0]} ${x[2]}</a>`,
-    )
+    .map((x) => `<a class="chip" href="${x[1]}" target="_blank" rel="noopener noreferrer">${x[0]} ${x[2]}</a>`)
     .join("");
 
   return (
@@ -734,16 +707,11 @@ function panel(i) {
   );
 }
 
-const SUN = // SVG is made with chatgbt, there's no human that writes random things like 4v8M32
-    '<svg viewBox="0 0 64 64"><g stroke="var(--acc2)" stroke-width="4" stroke-linecap="round"><path d="M32 4v8M32 52v8M4 32h8M52 32h8M12 12l6 6M46 46l6 6M12 52l6-6M46 18l6-6"/></g><circle cx="32" cy="32" r="12" fill="var(--acc)"/></svg>',
-  MOON =
-    '<svg viewBox="0 0 64 64"><path d="M44 8a24 24 0 1 0 12 36A20 20 0 0 1 44 8z" fill="var(--acc2)"/></svg>';
-
 function hello(u) {
   const h = new Date().getHours();
   const k = h < 12 ? 0 : h < 18 ? 1 : 2;
-  const icon = h < 5 || h >= 19 ? MOON : SUN;
-  return `<div class="hi">${icon}<div><h1>${u.g[k]}</h1><p>${u.hi}</p></div></div>`;
+  const date = new Date().toLocaleDateString(u.loc, { weekday: "long", day: "numeric", month: "long" });
+  return `<div class="hi"><div><p class="dt">${date}</p><h1>${u.g[k]}</h1><p>${u.hi}</p></div></div>`;
 }
 
 function render(anim) {
@@ -757,55 +725,43 @@ function render(anim) {
   h.dir = S.lang === "ar" || S.lang === "cp" ? "rtl" : "ltr";
   document.title = "Evangil";
 
-  const langName = (l) =>
-    l === "ar" ? "ع" : l === "cp" ? "Ⲙ" : l.toUpperCase();
+  const langName = (l) => (l === "ar" ? "ع" : l === "cp" ? "Ⲙ" : l.toUpperCase());
   $("#tools").innerHTML =
     ["ar", "en", "fr", "cp"]
-      .map(
-        (l) =>
-          `<button class="${l === S.lang ? "on" : ""}" data-l="${l}">${langName(l)}</button>`,
-      )
+      .map((l) => `<button class="${l === S.lang ? "on" : ""}" data-l="${l}">${langName(l)}</button>`)
       .join("") + `<button data-th aria-label="theme">◐</button>`;
 
   const st = streak();
   const today = !!S.days[key(new Date())]; // For less hours wasted the '!!' converts whatever values into boolean.
 
-  const wk = []; // Most random variable names in this section.
+  const wk = []; //Most random variable names in this section.
   for (let k = 6; k >= 0; k--) {
     const d = new Date();
     d.setDate(d.getDate() - k);
     const day = d.toLocaleDateString(u.loc, { weekday: "narrow" });
-    wk.push(
-      `<div class="dot ${S.days[key(d)] ? "f" : ""}"><i></i>${day}</div>`,
-    );
+    wk.push(`<div class="dot ${S.days[key(d)] ? "f" : ""}"><i></i>${day}</div>`);
   }
 
   const isRead = S.seen.includes(cur);
   const pct = Math.round((S.seen.length / V.length) * 100); // Actually don't remember how it function.
 
   const sub = st === 0 ? u.s0 : today && st === 1 ? u.s1 : !today ? u.sn : ""; // Wa did i wro here 😢
-  // To rememeber the '? :' is a if else func
-  const streakBox = `<div class="streak"><div class="flame ${today ? "lit" : ""}">🔥</div><div><div class="n">${num(st)}</div><div class="sub">${st ? u.streak : ""} ${sub}</div></div><div class="dots">${wk.join("")}</div></div>`;
+  // SVG is made with chatgbt, there's no human that writes random things like 4v8M32
+  const streakBox = `<div class="streak"><svg class="flame ${today ? "lit" : ""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg><div><div class="n">${num(st)}</div><div class="sub">${st ? u.streak : ""} ${sub}</div></div><div class="dots">${wk.join("")}</div></div>`;
 
   // From there is absolute cHaOs no notes or comments just random and horrible things that works
   const moodChips =
     `<button class="chip ${!mood ? "on" : ""}" data-m="">${u.all}</button>` +
     Object.entries(u.m)
-      .map(
-        ([k, t]) =>
-          `<button class="chip ${mood === k ? "on" : ""}" data-m="${k}">${t}</button>`,
-      )
+      .map(([k, t]) => `<button class="chip ${mood === k ? "on" : ""}" data-m="${k}">${t}</button>`)
       .join("");
 
-  const note = ((S.notes && S.notes[cur]) || "")
-    .replace(/"/g, "&quot;")
-    .replace(/</g, "&lt;");
+  const note = ((S.notes && S.notes[cur]) || "").replace(/"/g, "&quot;").replace(/</g, "&lt;");
   const body =
     S.lang === "cp" && v.c
       ? `<p class="txt cp">${v.c}</p>`
-      : (S.lang === "cp"
-          ? `<p class="cpn">النص القبطي قيد المراجعة، دي النسخة العربي</p>`
-          : "") + `<p class="txt">${v.t[i]}</p>`;
+      : (S.lang === "cp" ? `<p class="cpn">النص القبطي قيد المراجعة، دي النسخة العربي</p>` : "") +
+        `<p class="txt">${v.t[i]}</p>`;
 
   const verse = `<section class="verse ${anim ? "pop" : ""}"><span class="tag">${u.tag}</span>${body}<p class="ref">${v.r[i]}</p><div class="ask"><b>${u.ask}</b>${u.p[cur % 5]}</div><input class="note" data-note maxlength="140" placeholder="${u.np}" value="${note}"><div class="acts"><button class="btn main ${isRead ? "done" : ""}" data-read>${isRead ? u.done : u.read}</button><button class="btn fav ${S.favs.includes(cur) ? "on" : ""}" data-fav>♥</button><button class="btn" data-copy>${u.copy}</button><button class="btn" data-share>${u.share}</button><button class="btn" data-next>${u.next} ↻</button></div></section>`;
 
@@ -815,7 +771,7 @@ function render(anim) {
     S.favs
       .map(
         (f) =>
-          `<div class="fv" data-f="${f}"><b>${V[f].r[i]}</b>${V[f].t[i].slice(0, 90)}${V[f].t[i].length > 90 ? "…" : ""}</div>`,
+          `<div class="fv" data-f="${f}"><b>${V[f].r[i]}</b>${V[f].t[i].slice(0, 90)}${V[f].t[i].length > 90 ? "…" : ""}</div>`
       )
       .join("") || `<p class="empty">${u.none}</p>`;
 
@@ -834,47 +790,24 @@ function render(anim) {
   if (typeof WS !== "undefined" && WS) WS.after();
 }
 
-const DIR = [
-  [1, 0],
-  [0.9, 0.43],
-  [0.62, 0.78],
-  [0.22, 0.97],
-  [-0.22, 0.97],
-  [-0.62, 0.78],
-  [-0.9, 0.43],
-  [-1, 0],
-  [-0.9, -0.43],
-  [-0.62, -0.78],
-  [-0.22, -0.97],
-  [0.22, -0.97],
-  [0.62, -0.78],
-  [0.9, -0.43],
-];
-
 function burst(el) {
   const r = el.getBoundingClientRect();
-  for (let k = 0; k < 14; k++) {
-    const s = document.createElement("span");
-    s.className = "sp";
-    s.textContent = k % 3 === 2 ? "🔥" : k % 2 ? "✨" : "✦";
-    s.style.left = r.left + r.width / 2 + "px";
-    s.style.top = r.top + r.height / 2 + "px";
-    s.style.setProperty("--x", DIR[k][0] * 90 + "px");
-    s.style.setProperty("--y", DIR[k][1] * 90 + "px");
-    document.body.appendChild(s);
-    setTimeout(() => s.remove(), 1000);
-  }
+  const s = document.createElement("span");
+  s.className = "rp";
+  s.style.left = r.left + r.width / 2 + "px";
+  s.style.top = r.top + r.height / 2 + "px";
+  document.body.appendChild(s);
+  setTimeout(() => s.remove(), 700);
 }
 
 function pick() {
-  const pool = V.map((v, k) => k).filter(
-    (k) => k !== cur && (!mood || V[k].m.includes(mood)),
-  );
+  const pool = V.map((v, k) => k).filter((k) => k !== cur && (!mood || V[k].m.includes(mood)));
   if (pool.length) cur = pool[Math.floor(Math.random() * pool.length)];
 }
 
 document.addEventListener("click", async (e) => {
   // i say i won't write any other notes, but this is most horrifying thing i actually did.
+  // No future update for this thing unless i make it more readable.
   const t = e.target.closest("button,.fv");
   if (!t) return;
   const d = t.dataset;
@@ -946,4 +879,3 @@ document.addEventListener("input", (e) => {
 
 setTheme();
 render(true);
-
