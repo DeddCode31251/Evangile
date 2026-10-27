@@ -1,4 +1,4 @@
-
+/*Test Version*/
 :root {
   --bg: #f3eee2;
   --card: #faf7ef;
@@ -83,7 +83,6 @@ select,
 textarea {
   font: inherit;
 }
-/* My designs are actually that bad, so most of them are inspired by AI or directly copied from it. Keep it a secret 🤫, dw that emoji aint AI*/
 
 header {
   display: flex;
@@ -290,7 +289,7 @@ a.chip {
   text-decoration: none;
 }
 
-.verse { /* New Vocab !!*/
+.verse {
   background: var(--card);
   border: 1px solid var(--line);
   border-inline-start: 3px solid var(--acc);
@@ -300,7 +299,7 @@ a.chip {
 }
 
 .verse.pop {
-  animation: fade .4s ease; /*using .Xs instead of 0.Xs because i used to use .Xs in kivy python library.*/
+  animation: fade .4s ease;
 }
 
 @keyframes fade {
@@ -311,8 +310,8 @@ a.chip {
 
 .tag {
   display: block;
-  color: var(--acc); 
-  font-size: .85rem; /* keeps miswriting the comments using '//' */
+  color: var(--acc);
+  font-size: .85rem;
   font-weight: 600;
   margin-bottom: 12px;
 }
